@@ -1,0 +1,479 @@
+//ex 1 
+/*
+function distanciaRestante(distanciaTotal, distanciaPercorrida) {
+    return distanciaTotal - distanciaPercorrida;
+  } //função foi usada para fazer a subtração
+  
+  let distanciaTotal = Number(prompt("Digite a distância total (km):")); //falar a distância total
+  let distanciaPercorrida = Number(prompt("Digite a distância percorrida (km):"));// distância percorrida
+  
+  let restante = distanciaRestante(distanciaTotal, distanciaPercorrida);//pega a função e adiciona os valores
+  console.log(`Faltam ${restante} km para chegar ao destino.`);
+  */
+
+  // ex 2
+  /*
+function calcularGorjeta(valorRefeicao) {
+  return valorRefeicao * 0.10;
+}//função multiplica 
+
+let valorRefeicao = Number(prompt("Digite o valor da refeição:"));//valor refeição
+let gorjeta = calcularGorjeta(valorRefeicao);//calcula a gorjeta
+
+console.log(`A gorjeta é de R${gorjeta.toFixed(2)}.`); // toFixed(2) faz com que o
+ valor fique apenas com duas casas decimais depois da virgula
+   */
+
+  //ex 3
+/*
+function converterPolegadasParaCm(polegadas) {
+    return polegadas * 2.54;
+  }
+  
+  let valorPolegadas = Number(prompt("Digite o valor em polegadas:")); 
+  let centimetros = converterPolegadasParaCm(valorPolegadas); 
+  console.log(`A quantidade em centímetros é de ${centimetros} cm`);
+  */
+ //ex 4
+ /*
+ function idadeEmDias(idadeAnos){
+    return idadeAnos * 365;
+ }
+let valorAnos = Number(prompt("Digite sua idade: "));
+let dias = idadeEmDias(valorAnos);
+console.log(`Você tem aproximadamente ${dias} dias vividos.`);
+ */
+
+//ex 5
+/*
+function precoUnitario(precoTotalPacote, numeroItens){
+return precoTotalPacote / numeroItens;
+}
+let precoTotal = Number(prompt("Digite o preço total do pacote:"));
+let precoItens = Number(prompt("Digite quantos itens foi comprado:"));
+let precoUnico = precoUnitario(precoTotal,precoItens)
+console.log(`O preço de um único item é de R$ ${precoUnico.toFixed(2)} `); // toFixed(2) faz com que o
+//valor fique apenas com duas casas decimais depois da virgula
+  */
+//ex 6
+/*
+function minutosParaSegundos(minutos){
+    return minutos*60;
+}
+let minutos = Number(prompt("Digite a quantidade de minutos"))
+let segundos = minutosParaSegundos(minutos);
+console.log (`A quantidade de segundos é de ${segundos} segundos `);
+*/
+//ex 7
+/*
+function ehNumero(valor){
+    if (valor === parseFloat(valor)){
+        return true;
+    }
+    else{
+    return false
+}
+}
+let valorDigitado = prompt("Digite alguma coisa:");//usuário digitar algo
+valorDigitado = Number(valorDigitado);  //converte a string em número
+console.log(ehNumero(valorDigitado)); // mostra se deu para converter para number ou não
+*/
+//ex 8
+
+/*
+function verificarPorta() {
+  return portaAberta;  
+}
+let portaAberta = false
+
+console.log(verificarPorta()); // retorna o valor 
+*/
+//ex 9
+/*
+function gerandoEmail(gerar){
+    return gerar + "@exemplo.com"
+}//adiciona o domínio do email 
+let nome = prompt(" Digite o nome escolhido:")//nome para o email
+let email = gerandoEmail(nome) //juntando o nome com o domínio
+console.log ( `seu novo email é ${email} `)
+*/
+//ex 10
+/*
+function paginasRestantes(totalPaginas, paginasLidas){
+return totalPaginas - paginasLidas;
+}
+let totalPaginas = prompt(" Digite a quantidade de páginas totais:")//quantidade de páginas totais
+let paginasLidas = prompt(" Digite a quantidade de páginas lidas:")//quantidade de páginas lidas
+
+let nLidas = paginasRestantes(totalPaginas,paginasLidas) //juntando o nome com o domínio
+console.log ( `Quantidade de páginas restantes é de  ${nLidas} páginas`);
+*/
+//BLOCO 2
+//ex 1
+/*
+function temperaturaAgradavel(temperatura){
+    if ( temperatura >=20 && temperatura <=25){
+        return true; // se a temperatura for maior ou igual que 20 e menor ou igual a 25 é true
+    }   else{
+        return false;
+    }
+    }
+let temp= Number(prompt("Digite a temperatura:"));
+console.log(temperaturaAgradavel(temp)); ativa a função
+*/
+
+//ex 2
+/*
+function checarAprovacao(nota){
+    if(nota >=7){
+        return "aprovado" //aprovado se for maior que 7 ou igual
+    }
+    else {
+        return "reprovado"
+    }
+}
+let notaAluno = Number(prompt("Digite a nota do aluno:"))
+console.log(checarAprovacao(notaAluno));// ativa a função de aprovado ou reprovado
+*/
+
+//ex 3
+/*
+function temEntradaGratuita(idade){
+    if (idade >=65){
+        return true;// se for maior ou igual que 65
+    }
+    else{
+        return false;
+    }
+}
+let Idadepessoa = Number(prompt("Digite sua idade:" ));
+console.log(temEntradaGratuita(Idadepessoa)); // vai ativar a função 
+*/
+//ex 4
+/*
+function ehZero(numero) {
+    if (numero === 0) {
+      return true;  // Se for 0
+    } else {
+      return false; // Se for qualquer outro número
+    }
+  }
+  
+  
+  let numeroDigitado = Number(prompt("Digite um número:"));
+  console.log(ehZero(numeroDigitado));
+*/
+//ex 5 
+/*
+function tipoDeDia(diaSemana) {
+    if (diaSemana === "sábado" && diaSemana === "domingo") {
+      return "Fim de semana"; // se for sabado e domingo é fim de semana
+    } else {
+      return "Dia útil"; // se nao for sabado ou domingo é dia útil
+    }
+  }
+  
+  
+  let dia = prompt("Digite o dia da semana (em minúsculo):");
+  console.log(tipoDeDia(dia)); // mostra o resultado(chama a função)
+  */
+
+
+  //BLOCO 3
+  //ex 1
+/*
+  function simularElevador() {
+    for (let andar = 1; andar <= 5; andar++) {// serve para ir do 1 ao 5
+      console.log(`Subindo para o andar ${andar}`);
+    }
+  }
+
+  simularElevador();//chama a função
+  */
+
+  //ex 2
+/*
+  function contarOvelhas() {
+    for (let i = 1; i <= 5; i++) {
+      console.log(`${i} ovelha...`);
+    }
+  }
+  
+  // Chamando a função:
+  contarOvelhas();
+*/
+
+  //ex 3
+/*
+function somarParesAteN(n) {
+    let soma = 0;
+    for (let i = 2; i <= n; i += 2) { // Começa em 2 e vai de 2 em 2
+        soma += i;
+    }
+    return soma;
+}
+*/
+
+  //ex 4
+/*
+function listarImpares() {
+    for (let i = 1; i < 10; i += 2) { // Vai de 1 até 9 de 2 em 2
+        console.log(i);
+    }
+}
+    */
+
+
+
+//ex 5
+/*
+function linhaDeAsteriscos(quantidade) {
+    let linha = '';
+    for (let i = 0; i < quantidade; i++) {
+        linha += '*'; // Adiciona um asterisco por vez
+    }
+    return linha;
+}
+    */
+// Bloco 4 
+//ex 1 
+/*
+function despedida(nome) {
+    return `Até logo, ${nome}!`;
+}
+  */
+ //ex 2
+ /*
+function perimetroQuadrado(lado) {
+    return 4 * lado; // Fórmula do perímetro de um quadrado
+}
+    */
+// ex 3
+/*
+function reaisParaDolares(valorReais) {
+    return valorReais / 5; // Converte para dólares, considerando a taxa de 1 dólar = 5 reais
+}
+    */
+// ex 4
+/*
+function metade(numero) {
+    return numero / 2;
+}
+    */
+
+//ex 5
+/*
+function mostrarStatus(status) {
+    console.log(`Status: ${status}`);
+}
+    */
+//Bloco 5
+//ex 1
+/*
+function minhasCoresFavoritas() {
+    return ["azul", "verde", "preto"];
+}
+    */
+//ex 2
+/*
+function segundaCor(cores) {
+    return cores[1]; // Retorna a cor no índice 1
+}
+    */
+//ex 3
+/*
+function penultimoElemento(lista) {
+    return lista[lista.length - 2]; // Acessa o penúltimo elemento
+}
+    */
+//ex 4
+/*
+function adicionarCor(cores, novaCor) {
+    cores.push(novaCor); // Adiciona a nova cor ao final do array
+    return cores;
+}
+    */
+//ex 5
+/*
+function carrinhoVazio(carrinho) {
+    return carrinho.length === 0; // Verifica se o carrinho está vazio
+}
+    */
+//ex 6
+/*
+function calcularMediaNotas(notas) {
+    let soma = notas.reduce((acc, nota) => acc + nota, 0);
+    return soma / notas.length;
+}
+    */
+
+//ex 7
+/*
+function encontrarMenorPonto(pontuacoes) {
+    let menor = pontuacoes[0];
+    for (let i = 1; i < pontuacoes.length; i++) {
+        if (pontuacoes[i] < menor) {
+            menor = pontuacoes[i];
+        }
+    }
+    return menor;
+}
+    */
+//ex 8
+/*
+function imprimirListaNumerada(itens) {
+    for (let i = 0; i < itens.length; i++) {
+        console.log(`${i + 1}. ${itens[i]}`); // Imprime o item com numeração
+    }
+}
+    */
+//ex 9
+/*
+function numeroFoiSorteado(numerosSorteados, numero) {
+    for (let i = 0; i < numerosSorteados.length; i++) {
+        if (numerosSorteados[i] === numero) {
+            return true; // Retorna true se o número foi sorteado
+        }
+    }
+    return false;
+}
+    */
+//ex 10
+/*
+function criarArrayImpares() {
+    return [1, 3, 5, 7, 9];
+}
+    */
+   // Bloco 6
+// ex 1
+/*
+function descreverMeuCarro() {
+    return {
+        marca: "Toyota",
+        modelo: "Corolla",
+        ano: 2020
+    };
+}
+    */
+
+//ex 2
+/*
+function getMarcaCarro(carro) {
+    return carro.marca; // Retorna a marca do carro
+}
+    */
+//ex 3
+/*
+function getAnoCarro(carro) {
+    return carro.ano; // Retorna o ano do carro
+}
+    */
+//ex 4
+/*
+function atualizarModeloCarro(carro, novoModelo) {
+    carro.modelo = novoModelo; // Atualiza o modelo
+    return carro;
+}
+    */
+//ex 5
+/*
+function criarProduto(nome, preco, codigo) {
+    return { nome, preco, codigo }; // Retorna um objeto com nome, preço e código
+}
+    */
+
+//ex 6
+/*
+function mostrarPrecoProduto(produto) {
+    console.log(`Preço: R$${produto.preco}`);
+}
+    */
+//ex 7
+/*
+function adicionarEstoqueProduto(produto, quantidade) {
+    produto.estoque = quantidade; // Adiciona a quantidade ao estoque
+    return produto;
+}
+    */
+   //bloco 7
+   //ex 1
+   /*
+function criarListaProdutos() {
+  return [
+      { nome: "Camiseta", preco: 29.99 },
+      { nome: "Boné", preco: 19.90 }
+  ];
+}
+ */
+// ex 2
+ /*
+function encontrarProdutoPorNome(produtos, nomeProduto) {
+  for (let i = 0; i < produtos.length; i++) {
+      if (produtos[i].nome === nomeProduto) {
+          return produtos[i]; // Retorna o produto se encontrar
+      }
+  }
+  return undefined; // Retorna undefined se não encontrar
+}
+   */
+
+// ex 3
+ /*
+function listarNomesProdutos(produtos) {
+  let nomes = [];
+  for (let i = 0; i < produtos.length; i++) {
+      nomes.push(produtos[i].nome); // Pega só o nome e adiciona na lista
+  }
+  return nomes;
+}
+   */
+
+// ex 4
+ /*
+function somarPrecosProdutos(produtos) {
+  let soma = 0;
+  for (let i = 0; i < produtos.length; i++) {
+      soma += produtos[i].preco; // Soma todos os preços
+  }
+  return soma;
+}
+ */
+// ex 5
+ /*
+function usernameValido(username) {
+  return username.length >= 3 && username.length <= 10;
+}
+ */
+// ex 6
+ /*
+function contarEspacos(frase) {
+  let contador = 0;
+  for (let i = 0; i < frase.length; i++) {
+      if (frase[i] === " ") {
+          contador++; // Conta se o caractere for espaço
+      }
+  }
+  return contador;
+}
+   */
+
+// ex 7
+ /*
+function juntarComHifens(palavras) {
+  let resultado = "";
+  for (let i = 0; i < palavras.length; i++) {
+      resultado += palavras[i];
+      if (i < palavras.length - 1) {
+          resultado += "-"; // Adiciona hífen entre as palavras, mas não no final
+      }
+  }
+  return resultado;
+}
+   */
+
+// ex 8
+ /*
+function pegarPrimeiraLetra(texto) {
+  return texto[0]; // Retorna o primeiro caractere da string
+}
+  */
